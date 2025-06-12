@@ -56,6 +56,7 @@ climate_change_df = pd.read_csv("C:/Users/Mazeliz Depot1/Desktop/NGOZI/_Mr Emma 
 climate_change_df
 
 ```
+![data Loading](https://github.com/user-attachments/assets/8f1af510-e15d-4253-9d57-a5788b3cc741)
 
 ###  Data Analysis
 
@@ -71,6 +72,8 @@ climate_change_df = pd.read_csv("C:/Users/Mazeliz Depot1/Desktop/NGOZI/_Mr Emma 
 climate_change_df
 
 ```
+![Data Analysis](https://github.com/user-attachments/assets/439f8d17-9058-4d70-99cd-ae0424788912)
+
 
 ###  Data Inspection(check for missing values),
 
@@ -78,12 +81,16 @@ climate_change_df
 # Checking of any missing value on eaxh column
 climate_change_df.isna().any()
 ```
+![Missing values](https://github.com/user-attachments/assets/80ad388b-11d5-41b4-91a3-30bd9ef6fb4d)
+
 
 ```python
 # Counting the number of missing values
 climate_change_df.isna().sum()
 
 ```
+![counting missing N0](https://github.com/user-attachments/assets/8c6793cb-a585-4b31-9ec7-2bbff4b6cf64)
+
 
 ### Data Cleaning (handling missing values) 
 
@@ -92,12 +99,15 @@ climate_change_df.isna().sum()
 climate_change_df.shape
 
 ```
+![total row $ columu](https://github.com/user-attachments/assets/344c3e5c-a265-46ce-ba23-e9e29bdb5ba3)
+
 
 ```python
 # to find the most value for data replacement and cleaning
 climate_change_df["co2"].mean()
 
 ```
+![most value](https://github.com/user-attachments/assets/55cc1f1f-2f74-4668-9352-544f877b99d9)
 
 ```python
 # Replacing or filling the missing values with the mean value 352.32 on the CO2 column
@@ -105,12 +115,14 @@ climate_change_df = climate_change_df.fillna(352.32)
 climate_change_df.head()
 
 ```
+![fill missing](https://github.com/user-attachments/assets/9e57c587-f4e3-4999-8243-0ea020388976)
 
 ```python
 # Confirm that there are no more missing values
 climate_change_df.isna().any()
 
 ```
+![find missing](https://github.com/user-attachments/assets/822fff7f-465b-4f13-9b6e-9f6f2acabf89)
 
 ### Data Visualization
 
@@ -136,6 +148,7 @@ fig.suptitle("The Atmospheric Co2 Emission Trends (1958–2016)")
 plt.show()
 
 ```
+![Data Visualization](https://github.com/user-attachments/assets/e58d6663-20c1-4740-944c-c49ca16c5f32)
 
 ###  Data Interpretation
 * The data visualization above shows that there is a steady increase of c02 emmission from 1958 to 2016
